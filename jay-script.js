@@ -13,4 +13,4 @@ let randomHexColor = () =>
 }
 
 body.style.setProperty('--main-bg-clr', randomHexColor());
-body.style.setProperty('--secondary-bg-clr-bg-clr', randomHexColor());
+body.style.setProperty('--secondary-bg-clr', randomHexColor());
