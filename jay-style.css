@@ -6,20 +6,20 @@ html, body
 /* animation code */
 @keyframes change-background
 {
-	0% {background: linear-gradient(to top, #00ffff, #ff8000);}
-	25% {background: linear-gradient(to right, #00ffff, #ff8000);}
-	50% {background: linear-gradient(to bottom, #00ffff, #ff8000);}
-	75% {background: linear-gradient(to left, #00ffff, #ff8000);}
-	100% {background: linear-gradient(to top, #00ffff, #ff8000);}
+	0% {background: linear-gradient(to top, var(--main-bg-clr), var(--secondary-bg-clr));}
+	25% {background: linear-gradient(to right, var(--main-bg-clr), var(--secondary-bg-clr));}
+	50% {background: linear-gradient(to bottom, var(--main-bg-clr), var(--secondary-bg-clr));}
+	75% {background: linear-gradient(to left, var(--main-bg-clr), var(--secondary-bg-clr));}
+	100% {background: linear-gradient(to top, var(--main-bg-clr), var(--secondary-bg-clr));}
 }
 
 body
 {
-	background: linear-gradient(to top, #00ffff, #ff8000);
+	--main-bg-clr: #00ffff;
+	--secondary-bg-clr : #ff8000;
 	display: flex;
 	justify-content: center;
 	animation-name: change-background;
 	animation-duration: 4s;
-	animation-delay: 2s;
 	animation-iteration-count: infinite;
 }
