@@ -20,3 +20,10 @@ if (body.style.getPropertyValue('--main-bg-clr') > "#808080") {
 } else {
 	body.style.setProperty('--text-clr','white');
 }
+
+var canvas = document.getElementById('myCanvas');
+var ctx = canvas.getContext("2d", {
+	alpha: false,
+});
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(10, 10, 55, 50);

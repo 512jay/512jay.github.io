@@ -16,33 +16,29 @@ html, body
 body
 {
   --main-bg-clr: #00ffff;
-	--secondary-bg-clr : #ff8000;
-	--text-clr : white;
+  --secondary-bg-clr : #ff8000;
+  --text-clr : white;
+  animation-name: change-background;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  /* flexbox shenagins */
   display: flex;
-	justify-content: center;
-	flex-wrap:wrap;
-	animation-name: change-background;
-	animation-duration: 10s;
-	animation-iteration-count: infinite;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 nav
 { 
-  display: block;
-	/* width: 100%;  */
   height: 3.5em;
-	
 }
 
 nav a 
 {
 	display: block;
-	/* float: left; */
-/*We're just setting up fonts settings here*/
 	font-family: sans-serif;
 	font-size: 1em;
 	color: var(--text-clr);
-/*Box Method Test AKA handicap*/
 	background-color: var(--main-bg-clr);
 	border: 1px solid #000;
  
@@ -62,8 +58,6 @@ nav a:hover
 
 #logo 
 {
-	display:flex;
-	justify-content: center;
 	font-family: 'Hind', sans-serif;
 	text-shadow: 1px 1px 2px #c4c4c4;
 	font-size: 2em;
@@ -92,3 +86,8 @@ nav a:hover
 	flex-direction: column;
 }
 
+#myCanvas {
+	width:300px;
+	height:500px;
+    border:1px solid #000000;
+}
