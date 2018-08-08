@@ -15,9 +15,7 @@ let randomHexColor = () =>
 body.style.setProperty('--main-bg-clr', randomHexColor());
 body.style.setProperty('--secondary-bg-clr', randomHexColor());
 
-var bak = body.style.getPropertyValue('--main-bg-clr');
-console.log('main color is ',bak);
-if (bak > "#808080") {
+if (body.style.getPropertyValue('--main-bg-clr') > "#808080") {
 	body.style.setProperty('--text-clr', 'black');
 } else {
 	body.style.setProperty('--text-clr','white');
