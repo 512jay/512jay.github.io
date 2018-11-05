@@ -1,0 +1,34 @@
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
+    
+}
+.wrapper{
+    border: 2px solid #f76707;
+    border-radius: 5px;
+    background-color: #fff4e6;
+    padding: 1rem;
+}
+
+@supports(display: grid) {
+    .message {
+        display: none;
+    }
+}
+
+@media(max-width: 640px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+}
+
+.nested {
+    display: grid;
+    border: 2px solid #ffec99;
+    border-radius: 5px;
+    background-color: #fff9db;
+    padding: 1em;
+  }
