@@ -25,10 +25,9 @@
     }
 }
 
-.nested {
-    display: grid;
-    border: 2px solid #ffec99;
-    border-radius: 5px;
-    background-color: #fff9db;
-    padding: 1em;
-  }
+name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
